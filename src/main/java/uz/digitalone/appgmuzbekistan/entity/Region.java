@@ -21,7 +21,6 @@ import java.util.Set;
 @EqualsAndHashCode(callSuper = true)
 @Entity
 @Data
-@AllArgsConstructor
 @NoArgsConstructor
 public class Region extends AbsEntity {
 
@@ -34,4 +33,9 @@ public class Region extends AbsEntity {
     @Column(nullable = false)
     private Long population;
 
+    public Region(String name, Double area, Long population) {
+        this.name = name;
+        this.area = area;
+        this.population = population;
+    }
 }

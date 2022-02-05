@@ -12,7 +12,6 @@ import javax.persistence.*;
  * Time: 7:08 PM
  */
 
-@Entity
 @Data
 @AllArgsConstructor
 @NoArgsConstructor

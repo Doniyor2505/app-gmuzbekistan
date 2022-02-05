@@ -36,5 +36,9 @@ public class GM extends AbsEntity {
     @ManyToOne
     private GM parent;      // parent - Filialning Asosiy Companyasi
 
-
+    public GM(String name, Address address, User director) {
+        this.name = name;
+        this.address = address;
+        this.director = director;
+    }
 }

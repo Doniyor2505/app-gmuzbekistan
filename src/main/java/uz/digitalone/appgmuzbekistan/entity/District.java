@@ -19,7 +19,6 @@ import javax.persistence.ManyToOne;
 @EqualsAndHashCode(callSuper = true)
 @Entity
 @Data
-@AllArgsConstructor
 @NoArgsConstructor
 public class District extends AbsEntity {
 
@@ -35,4 +34,10 @@ public class District extends AbsEntity {
     @ManyToOne
     private Region region;
 
+    public District(String name, Double area, Long population, Region region) {
+        this.name = name;
+        this.area = area;
+        this.population = population;
+        this.region = region;
+    }
 }
